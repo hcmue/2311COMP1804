@@ -23,3 +23,10 @@ mon_moi = {
     "ma_mon": ma_mon, "ten_mon": ten_mon, "so_tc": so_tc, "diem": diem
 }
 sv["mon_hoc"].append(mon_moi)
+
+import json
+json_str = json.dumps(sv, indent=4)
+print(json_str)
+
+with open("student.json", "w") as myfile:
+    json.dump(sv, myfile, indent=4)

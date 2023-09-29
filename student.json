@@ -1,0 +1,27 @@
+{
+    "ma_sv": "48.01.104.023",
+    "ho_ten": "T\u00e8o",
+    "gioi_tinh": true,
+    "tuoi": 21,
+    "diem_tb": 8.6,
+    "mon_hoc": [
+        {
+            "ma_mon": "COMP1084",
+            "ten_mon": "Th\u01b0\u01a1ng m\u1ea1i \u0110i\u1ec7n t\u1eed",
+            "so_tc": 3,
+            "diem": 8.9
+        },
+        {
+            "ma_mon": "COMP1804",
+            "ten_mon": "L\u1eadp tr\u00ecnh Python",
+            "so_tc": 3,
+            "diem": 9.8
+        },
+        {
+            "ma_mon": "COMP1013",
+            "ten_mon": "LTNC",
+            "so_tc": "3",
+            "diem": 7.9
+        }
+    ]
+}
