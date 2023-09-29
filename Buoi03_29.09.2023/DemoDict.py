@@ -17,7 +17,7 @@ sv = {
 }
 ma_mon = input("Mã môn: ")
 ten_mon = input("Tên môn: ")
-so_tc = input("Số tín chỉ: ")
+so_tc = int(input("Số tín chỉ: "))
 diem = float(input("Điểm HP: "))
 mon_moi = {
     "ma_mon": ma_mon, "ten_mon": ten_mon, "so_tc": so_tc, "diem": diem

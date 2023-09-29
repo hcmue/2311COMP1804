@@ -3,7 +3,7 @@
     "ho_ten": "T\u00e8o",
     "gioi_tinh": true,
     "tuoi": 21,
-    "diem_tb": 8.6,
+    "diem_tb": 8.866666666666667,
     "mon_hoc": [
         {
             "ma_mon": "COMP1084",
@@ -20,7 +20,7 @@
         {
             "ma_mon": "COMP1013",
             "ten_mon": "LTNC",
-            "so_tc": "3",
+            "so_tc": 3,
             "diem": 7.9
         }
     ]
