@@ -1,5 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
+from fastapi.templating import Jinja2Templates
+import json
+import os
 
 app = FastAPI()
 
@@ -18,3 +21,21 @@ def pypage():
 </html>
 '''
     return HTMLResponse(content=html)
+
+# from fastapi.templating import Jinja2Templates
+templates = Jinja2Templates(directory="Buoi07_FastAPI\\templates")
+working_directory = os.getcwd()
+
+@app.get("/tradiem/{ma_sv}", response_class=HTMLResponse)
+def tra_diem_sinh_vien(request: Request, ma_sv: str):
+    data_diem = []
+    with open(os.path.join(working_directory, "Buoi07_FastAPI", "students.json"), encoding="utf-8") as mf:
+        data_diem = json.load(mf)
+    return templates.TemplateResponse(
+        "student_template.html", 
+        {
+            "request": request,
+            "ho_ten_sinh_vien": ma_sv,
+            "ketqua": data_diem
+        }
+    )
