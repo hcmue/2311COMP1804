@@ -1,0 +1,14 @@
+[
+    {
+        "ma_mon": "COMP1804",
+        "ten_mon": "Lập trình Python",
+        "sotc": 3,
+        "diem": 10.0
+    },
+    {
+        "ma_mon": "COMP1802",
+        "ten_mon": "Thiết kế Web",
+        "sotc": 2,
+        "diem": 8.0
+    }
+]

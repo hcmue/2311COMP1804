@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT GRADE</title>
+</head>
+<body>
+    <h2>BẢNG ĐIỂM CỦA {{ho_ten_sinh_vien}}</h2>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th>Mã môn</th>
+            <th>Môn học</th>
+            <th>Số TC</th>
+            <th>Điểm</th>
+        </tr>
+        {% for item in ketqua %}
+            <tr>
+                <td>{{ item.ma_mon }}</td>
+                <td>{{ item.ten_mon }}</td>
+                <td>{{ item.sotc }}</td>
+                <td>{{ item.diem }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
